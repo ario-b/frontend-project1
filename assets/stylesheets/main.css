@@ -48,7 +48,28 @@ table {
 }
 
 /*
-    Grid
+
+    Clearfix
+    
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+
+    Container & Grid
+    
 */
 
 *,
@@ -59,3 +80,98 @@ table {
             box-sizing: border-box;
 }
 
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/*
+
+    Typography
+    
+*/
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+
+    Media
+
+*/
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    padding: 0;
+}
+
+/*
+
+    Header
+    
+*/
+
+header li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.top-nav,
+.main-header h2 {
+    float: left;
+}
+
+.main-nav,
+.top-header .contact {
+    float: right;
+}
+
+.top-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+}
+
+.top-header li {
+    border-right: 1px solid #ccc;
+}
+
+.top-header li:first-child,
+.main-header li:first-child {
+    padding-left: 0;
+}
+
+.top-header li:last-child,
+.main-header li:last-child {
+    border-right: 0;
+    padding-right: 0;
+}
+
+.main-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #eee;
+}
+
+
+/*
+
+    hero
+    
+*/
+
+.hero {
+    padding: 200px 200px;
+    text-align: center;
+}
