@@ -82,7 +82,7 @@ table {
 
 .container,
 .grid{
-    width: 900px;
+    width: 980px;
     margin: 0 auto;
 }
 
@@ -91,7 +91,8 @@ table {
 }
 
 .grid,
-.col-1-3 {
+.col-1-3,
+.col-1-4 {
     padding: 0 15px;
 }
 
@@ -101,13 +102,24 @@ table {
     width: 33.33%;
 }
 
+.col-1-4 {
+    display: inline-block;
+    vertical-align: top;
+    width: 24.9975%;
+}
+
+.centered-section {
+    text-align: center;
+    padding: 0 auto;
+}
+
 /*
 
     Typography
     
 */
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, li {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -130,6 +142,27 @@ a {
     height: 1em;
     vertical-align: middle;
     padding: 0;
+}
+
+/*
+
+    Button
+
+*/
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 0.5px solid rgba(208, 24, 42, 0);
+    background-color: #FF090F;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: rgba(208, 24, 42, 0);
+    color: #000;
+    border: 0.5px solid #000;
 }
 
 /*
@@ -182,27 +215,17 @@ header li {
 
 /*
 
-    Button
-
-*/
-
-.btn {
-    display: inline-block;
-    border: 0.5px solid #000;
-    padding: 10px;
-    margin: 10px;
-}
-
-/*
-
     Hero
     
 */
 
-.hero {
+.hero .container{
     padding: 200px 200px;
     text-align: center;
-    background-image: url(../images/hero-image.jpeg)
+}
+
+.hero {
+    background-image: url(../images/hero-image.jpeg);
 }
 
 .hero h1,
@@ -211,9 +234,20 @@ header li {
     color: #fff;
 }
 
-.hero .btn {
+.btn-hero:hover,
+.btn-hero-alt {
     border-color: #fff;
+    color: #fff;
+}
 
+.btn-hero-alt {
+    background-color: rgba(208, 24, 42, 0);
+}
+
+.btn-hero-alt:hover {
+    border: 0.5px solid rgba(208, 24, 42, 0);
+    background-color: #FF090F;
+    color: #fff;
 }
 
 /*
@@ -222,38 +256,134 @@ header li {
 
 */
 
-.feature-img {
+.feature-icon {
     float: left;
-}
-
-.feature-text {
-    text-align: center;
-    padding: 50px 100px;
-    border-radius: 8px 8px 0 0;
+    width: 90px;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 .feature-container {
     margin-top: -100px;
 }
 
+.feature-text {
+    border-radius: 8px 8px 0 0;
+}
+
 .feature-btn {
     text-align: center;
-}
-
-.feature-btn .btn {
-    margin: 20px 0;
-    border: none;
-    background-color: #D0182A;
-    color: #fff;
-}
-
-.feature-btn .btn:hover {
-    background-color: rgba(208, 24, 42, 0);
-    color: #000;
-    border: 0.5px solid #000;
+    border-bottom: 1px solid #ccc;
 }
 
 .feature-container .container,
 .feature-container .grid {
     background-color: #fff
+}
+
+.feature-img {
+    width: 100%;
+}
+
+/*
+
+    Mid Section
+
+*/
+
+.mid-section {
+    background-image: url(../images/mid-section-image.jpeg);
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.mid-section h3 {
+    color: #fff;
+    float: left;
+}
+
+.mid-section .btn {
+    display: block;
+    float: right;
+}
+
+.mid-section h3,
+.mid-section .btn {
+    margin: 0;
+    padding: 10px;
+}
+
+/*
+
+    Testimonial
+
+*/
+
+.testimonial {
+    background-color: #eee;
+}
+
+/*
+
+    Customer
+
+*/
+
+.customer ul {
+    margin: 30px auto;
+}
+
+/*
+
+    Lower Section
+
+*/
+
+.lower-section {
+    background-image: url(../images/lower-section-bg.jpeg);
+    background-size: cover;
+}
+
+
+
+/*
+
+    Company Info
+
+*/
+
+.company-info li {
+    border-bottom: 1px solid #ccc;
+}
+
+.company-info li:last-child {
+    border-bottom: none;
+}
+
+/* .company-info input {
+    margin: 10px 0;
+}
+
+.company-info .btn {
+    padding: 5px 5px;
+}
+
+.company-info .btn:hover {
+    border: 0.5px solid rgba(208, 24, 42, 0);
+    background-color: #FF090F;
+    color: #fff;
+} */
+
+/*
+
+    Footer
+
+*/
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
 }
